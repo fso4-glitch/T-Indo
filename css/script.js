@@ -1,8 +1,7 @@
-console.log("Tô Indo carregado com sucesso 🚗");
+console.log("Tô Indo carregado 🚗");
 
-// efeito leve ao clicar
 document.querySelectorAll('.btn').forEach(btn => {
     btn.addEventListener('click', () => {
-        console.log("Redirecionando para a Play Store...");
+        console.log("Indo para Play Store...");
     });
 });

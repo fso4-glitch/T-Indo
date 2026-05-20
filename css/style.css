@@ -5,7 +5,6 @@ body {
     color: white;
 }
 
-/* LOGO */
 .navbar {
     padding: 20px 40px;
 }
@@ -14,7 +13,6 @@ body {
     color: #FFD700;
 }
 
-/* HERO */
 .hero {
     padding: 80px 40px;
 }
@@ -32,7 +30,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* BOTÕES */
 .btn {
     padding: 14px 22px;
     border-radius: 10px;
@@ -47,21 +44,11 @@ body {
     color: black;
 }
 
-.primary:hover {
-    opacity: 0.8;
-}
-
 .secondary {
     border: 1px solid #FFD700;
     color: #FFD700;
 }
 
-.secondary:hover {
-    background: #FFD700;
-    color: black;
-}
-
-/* PLANOS */
 .planos {
     text-align: center;
     padding: 50px 20px;
@@ -73,46 +60,21 @@ body {
     overflow-x: auto;
     padding: 20px;
     scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-}
-
-.cards-scroll::-webkit-scrollbar {
-    display: none;
 }
 
 .card {
     min-width: 260px;
-    flex: 0 0 auto;
     background: #161616;
     padding: 20px;
     border-radius: 15px;
-    scroll-snap-align: start;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
 }
 
 .destaque {
     border: 2px solid #FFD700;
 }
 
-.old {
-    text-decoration: line-through;
-    color: #888;
-}
-
-.hint {
-    display: block;
-    color: #777;
-    margin-top: 10px;
-}
-
-/* FOOTER */
 footer {
     text-align: center;
     padding: 30px;
     background: #111;
-    margin-top: 40px;
 }
