@@ -5,6 +5,7 @@ body {
     color: white;
 }
 
+/* NAVBAR */
 .navbar {
     padding: 20px 40px;
 }
@@ -13,12 +14,13 @@ body {
     color: #FFD700;
 }
 
+/* HERO */
 .hero {
     padding: 80px 40px;
 }
 
 .hero-text h1 {
-    font-size: 48px;
+    font-size: 42px;
 }
 
 .hero-text span {
@@ -30,6 +32,7 @@ body {
     margin-bottom: 20px;
 }
 
+/* BOTÕES */
 .btn {
     padding: 14px 22px;
     border-radius: 10px;
@@ -49,6 +52,7 @@ body {
     color: #FFD700;
 }
 
+/* PLANOS */
 .planos {
     text-align: center;
     padding: 50px 20px;
@@ -62,6 +66,10 @@ body {
     scroll-snap-type: x mandatory;
 }
 
+.cards-scroll::-webkit-scrollbar {
+    display: none;
+}
+
 .card {
     min-width: 260px;
     background: #161616;
@@ -73,6 +81,11 @@ body {
     border: 2px solid #FFD700;
 }
 
+.hint {
+    color: #777;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
     padding: 30px;

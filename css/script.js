@@ -1,7 +1,11 @@
 console.log("Tô Indo carregado 🚗");
 
-document.querySelectorAll('.btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        console.log("Indo para Play Store...");
+document.addEventListener("DOMContentLoaded", () => {
+    const botoes = document.querySelectorAll(".btn");
+
+    botoes.forEach(btn => {
+        btn.addEventListener("click", () => {
+            console.log("Redirecionando para Play Store...");
+        });
     });
 });
