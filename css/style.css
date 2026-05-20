@@ -103,11 +103,18 @@ body {
     padding: 80px 20px;
 }
 
+/* 🔥 SCROLL LATERAL ADICIONADO */
 .cards {
     display: flex;
-    justify-content: center;
     gap: 25px;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
 }
 
 .card {
@@ -115,6 +122,8 @@ body {
     padding: 30px;
     border-radius: 20px;
     width: 260px;
+    flex: 0 0 auto; /* IMPORTANTE pro scroll funcionar */
+    scroll-snap-align: start;
     transition: 0.3s;
 }
 
