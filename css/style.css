@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: linear-gradient(180deg, #0b0b0b, #000);
+    background: #000;
     color: white;
 }
 
@@ -11,6 +11,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 30px 60px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
 }
 
 .logo span {
@@ -25,11 +30,31 @@ nav a {
 
 /* HERO */
 .hero {
-    padding: 100px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 80px;
+    background: url("bg.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
 }
 
 .hero-text h1 {
-    font-size: 56px;
+    font-size: 60px;
+    line-height: 1.1;
 }
 
 .hero-text span {
@@ -58,6 +83,25 @@ nav a {
     color: #FFD700;
 }
 
+/* IMAGENS */
+.hero-img {
+    position: relative;
+    z-index: 2;
+}
+
+.phone {
+    width: 260px;
+    position: relative;
+    z-index: 3;
+}
+
+.car {
+    width: 400px;
+    position: absolute;
+    right: -150px;
+    bottom: -50px;
+}
+
 /* PLANOS */
 .planos {
     text-align: center;
@@ -84,20 +128,6 @@ nav a {
 
 .destaque {
     border: 2px solid #FFD700;
-}
-
-/* DUPLO */
-.duplo {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 80px;
-}
-
-.box {
-    background: #111;
-    padding: 40px;
-    border-radius: 15px;
 }
 
 /* FOOTER */
