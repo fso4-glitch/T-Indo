@@ -3,16 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CTLlevaLem</title>
+<title>CTLleva</title>
 
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
+<!-- NAVBAR -->
 <header class="navbar">
-    <h2 class="logo">CTLeva<span>Lem</span></h2>
+    <h2 class="logo">CTLleva<span>Lem</span></h2>
 
     <nav>
         <a href="#">Início</a>
@@ -22,50 +21,42 @@
         <a href="#">Contato</a>
     </nav>
 
-    <a href="https://play.google.com/store/apps/details?id=com.seuapp" target="_blank" class="btn download">
+    <a class="btn download" target="_blank"
+    href="https://play.google.com/store/apps/details?id=com.seuapp">
         Baixar o app
     </a>
 </header>
 
+<!-- HERO -->
 <section class="hero">
 
-    <div class="overlay"></div>
+    <div class="hero-text">
+        <p class="tag">O APP DE MOBILIDADE</p>
 
-    <div class="hero-content">
+        <h1>
+            Sua corrida.<br>
+            Do seu jeito.<br>
+            <span>Mais economia.</span>
+        </h1>
 
-        <div class="left">
-            <p class="tag">APP DE MOBILIDADE</p>
+        <p class="desc">
+            Viagens rápidas, seguras e com preços justos.
+        </p>
 
-            <h1>
-                Sua corrida.<br>
-                Do seu jeito.<br>
-                <span>Mais economia.</span>
-            </h1>
+        <div class="buttons">
+            <a href="https://play.google.com/store/apps/details?id=com.seuapp" target="_blank" class="btn primary">
+                Sou Passageiro
+            </a>
 
-            <p class="desc">
-                Viagens rápidas, seguras e com preços justos.
-            </p>
-
-            <div class="buttons">
-                <a href="https://play.google.com/store/apps/details?id=com.seuapp" target="_blank" class="btn primary">
-                    Sou Passageiro
-                </a>
-
-                <a href="https://play.google.com/store/apps/details?id=com.seuapp" target="_blank" class="btn secondary">
-                    Sou Motorista
-                </a>
-            </div>
-
+            <a href="https://play.google.com/store/apps/details?id=com.seuapp" target="_blank" class="btn secondary">
+                Sou Motorista
+            </a>
         </div>
-
-        <div class="center">
-            <img src="https://i.imgur.com/6b7QZ9M.png" class="phone">
-        </div>
-
     </div>
 
 </section>
 
+<!-- PLANOS -->
 <section class="planos">
 
     <h2>Escolha a opção ideal</h2>
@@ -76,7 +67,7 @@
             <h3>Econômico</h3>
             <span class="old">R$18</span>
             <h2>R$12</h2>
-            <p>Melhor preço do dia a dia</p>
+            <p>Melhor preço para o dia a dia</p>
         </div>
 
         <div class="card">
@@ -92,10 +83,30 @@
         </div>
 
     </div>
+</section>
+
+<!-- PASSAGEIRO / MOTORISTA -->
+<section class="duplo">
+
+    <div class="box">
+        <h2>Para passageiros</h2>
+        <p>Mais praticidade e economia</p>
+        <a href="#" class="btn primary">Pedir corrida</a>
+    </div>
+
+    <div class="box">
+        <h2>Para motoristas</h2>
+        <p>Mais ganhos e liberdade</p>
+        <a href="#" class="btn primary">Quero ser motorista</a>
+    </div>
 
 </section>
 
-<script src="script.js"></script>
+<!-- FOOTER -->
+<footer>
+    <h2>CTLlevaLem</h2>
+    <p>© 2024 Todos os direitos reservados</p>
+</footer>
 
 </body>
 </html>
