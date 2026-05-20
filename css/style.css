@@ -167,3 +167,12 @@ footer {
         padding: 20px;
     }
 }
+
+@media (min-width: 1024px) {
+
+    .cards {
+        justify-content: center;
+        overflow-x: visible;
+    }
+
+}
