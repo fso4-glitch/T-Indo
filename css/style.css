@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: #0b0b0b;
+    background: linear-gradient(180deg, #0b0b0b, #000);
     color: white;
 }
 
@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 30px 60px;
 }
 
 .logo span {
@@ -18,18 +18,18 @@ body {
 }
 
 nav a {
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
     color: white;
 }
 
 /* HERO */
 .hero {
-    padding: 80px 40px;
+    padding: 100px 60px;
 }
 
 .hero-text h1 {
-    font-size: 48px;
+    font-size: 56px;
 }
 
 .hero-text span {
@@ -42,8 +42,8 @@ nav a {
 
 /* BOTÕES */
 .btn {
-    padding: 12px 20px;
-    border-radius: 8px;
+    padding: 14px 24px;
+    border-radius: 10px;
     text-decoration: none;
     margin-right: 10px;
 }
@@ -61,20 +61,20 @@ nav a {
 /* PLANOS */
 .planos {
     text-align: center;
-    padding: 50px;
+    padding: 80px;
 }
 
 .cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .card {
     background: #161616;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
+    padding: 30px;
+    border-radius: 15px;
+    width: 260px;
 }
 
 .old {
@@ -90,19 +90,19 @@ nav a {
 .duplo {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    padding: 50px;
+    gap: 40px;
+    padding: 80px;
 }
 
 .box {
     background: #111;
-    padding: 30px;
-    border-radius: 10px;
+    padding: 40px;
+    border-radius: 15px;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
-    padding: 30px;
+    padding: 40px;
     background: #111;
 }
