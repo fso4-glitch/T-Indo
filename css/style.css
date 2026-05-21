@@ -211,3 +211,16 @@ body {
 .cta-benefits {
     margin-bottom: 30px; /* EMPURRA O BOTÃO PRA BAIXO */
 }
+
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap; /* evita quebrar feio no notebook */
+    gap: 15px; /* espaço entre os botões */
+    justify-content: center; /* centraliza */
+    margin-top: 20px;
+}
+
+.cta-buttons a {
+    display: inline-block;
+    padding: 12px 20px;
+}
