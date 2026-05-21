@@ -223,3 +223,16 @@ body {
         overflow-x: hidden;
     }
 }
+
+@media (max-width: 768px) {
+    .hero {
+        align-items: flex-start; /* sobe tudo */
+        padding-top: 100px;      /* controla distância do topo */
+        height: auto;            /* evita forçar altura gigante */
+        min-height: 100vh;       /* mantém tela cheia sem bug */
+    }
+
+    .hero-content {
+        margin-top: 20px; /* ajuste fino */
+    }
+}
