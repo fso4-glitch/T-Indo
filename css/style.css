@@ -224,3 +224,10 @@ body {
     display: inline-block;
     padding: 12px 20px;
 }
+
+@media (min-width: 768px) {
+    .cta-buttons {
+        justify-content: center;
+        align-items: center;
+    }
+}
