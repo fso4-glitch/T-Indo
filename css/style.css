@@ -40,13 +40,14 @@ body {
     align-items: center;
 }
 
+/* OVERLAY */
 .overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(90deg, #000 40%, rgba(0,0,0,0.4));
 }
 
-/* 🔥 CORREÇÃO PRINCIPAL (layout lado a lado) */
+/* CONTEÚDO HERO */
 .hero-content {
     position: relative;
     z-index: 2;
@@ -55,16 +56,16 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    gap: 60px; /* espaço entre texto e imagem */
+    gap: 40px;
 
     padding: 0 40px;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-/* BLOCO DE TEXTO (mantém sua estrutura) */
+/* TEXTO */
 .hero-text-box {
-    max-width: 550px;
+    max-width: 500px;
 }
 
 .tag {
@@ -74,7 +75,7 @@ body {
 
 .hero h1 {
     font-size: 56px;
-    line-height: 1.1;
+    line-height: 1.05;
 }
 
 .hero span {
@@ -87,6 +88,21 @@ body {
 }
 
 /* BOTÕES */
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.hero-buttons .btn {
+    width: 100%;
+    padding: 18px;
+    border-radius: 22px;
+    font-size: 16px;
+}
+
+/* BOTÕES BASE */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -94,7 +110,6 @@ body {
     gap: 10px;
 
     padding: 14px 24px;
-    margin-right: 10px;
     border-radius: 12px;
     text-decoration: none;
     transition: 0.3s;
@@ -111,7 +126,7 @@ body {
 }
 
 .btn.white {
-    background: #fff;
+    background: #eaeaea;
     color: #000;
 }
 
@@ -120,14 +135,14 @@ body {
     color: #000;
 }
 
-/* IMAGEM HERO */
+/* IMAGEM */
 .hero-image {
     width: 100%;
     max-width: 400px;
     height: auto;
 }
 
-/* SEÇÃO PLANOS */
+/* PLANOS */
 .planos {
     text-align: center;
     padding: 80px 20px;
@@ -168,7 +183,6 @@ body {
     margin: 0 auto;
 }
 
-/* BADGE */
 .cta-badge {
     display: inline-block;
     padding: 8px 16px;
@@ -179,7 +193,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* TÍTULO */
 .cta-title {
     font-size: 34px;
     font-weight: 700;
@@ -192,7 +205,6 @@ body {
     color: #FFD700;
 }
 
-/* SUB */
 .cta-sub {
     font-size: 16px;
     color: #bbb;
@@ -200,7 +212,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* BENEFÍCIOS */
 .cta-benefits {
     margin-bottom: 40px;
 }
@@ -212,7 +223,6 @@ body {
     align-items: flex-start;
 }
 
-/* ÍCONES */
 .icon {
     width: 45px;
     height: 45px;
@@ -234,7 +244,6 @@ body {
     color: #aaa;
 }
 
-/* BOTÃO CTA */
 .cta-button {
     display: block;
     width: 100%;
@@ -264,7 +273,7 @@ body {
     max-width: 500px;
     padding: 50px 25px;
     text-align: center;
-    background: #111; /* 🔥 manteve sua cor original */
+    background: #111;
     border-radius: 30px;
 }
 
@@ -293,7 +302,6 @@ body {
     }
 
     .cards {
-        flex-direction: row;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
     }
@@ -301,82 +309,5 @@ body {
     .card {
         min-width: 260px;
         scroll-snap-align: center;
-    }
-}
-
-/* CORREÇÃO DOS BOTÕES */
-.hero-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 18px; /* 🔥 espaço entre botões */
-    margin-top: 25px; /* 🔥 espaço acima */
-}
-
-/* PADRÃO DOS BOTÕES */
-.hero-buttons .btn {
-    width: 100%; /* 🔥 mesma largura */
-    padding: 18px; /* 🔥 mais altura */
-    border-radius: 22px; /* 🔥 mais arredondado igual app */
-    font-size: 16px;
-}
-
-/* BOTÃO BRANCO */
-.btn.white {
-    background: #eaeaea; /* mantém seu estilo */
-    color: #000;
-}
-
-/* CENTRALIZAR OS CARDS */
-.cards {
-    display: flex;
-    justify-content: center; /* 🔥 centraliza horizontal */
-    align-items: center;
-    gap: 25px;
-    flex-wrap: wrap; /* 🔥 evita quebrar em telas menores */
-}
-
-/* CONTAINER PRINCIPAL DO HERO */
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    padding: 80px 5%;
-    flex-wrap: wrap; /* quebra bonito no mobile */
-}
-
-/* BLOCO DE TEXTO */
-.hero-text {
-    max-width: 500px; /* 🔥 impede espalhar */
-}
-
-/* TÍTULO */
-.hero-text h1 {
-    font-size: 64px;
-    line-height: 1.1;
-}
-
-/* TEXTO LATERAL */
-.hero-description {
-    max-width: 300px;
-    opacity: 0.8;
-}
-
-/* BOTÕES */
-.hero-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-/* AJUSTE PARA TELAS MENORES */
-@media (max-width: 1024px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-buttons {
-        align-items: center;
     }
 }
