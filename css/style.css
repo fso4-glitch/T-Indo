@@ -247,6 +247,7 @@ body {
 @media (max-width: 768px) {
     .hero-image {
         display: block;
-        margin: 30px auto 0 auto;
+        margin: 30px auto 0 a
+        uto;
     }
 }
