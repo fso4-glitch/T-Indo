@@ -279,9 +279,9 @@ body {
     }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 768px) {
     .cards {
-        justify-content: center;
-        overflow-x: hidden;
+        flex-direction: column;
+        align-items: center;
     }
 }
