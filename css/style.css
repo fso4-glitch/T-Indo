@@ -325,3 +325,12 @@ body {
     background: #eaeaea; /* mantém seu estilo */
     color: #000;
 }
+
+/* CENTRALIZAR OS CARDS */
+.cards {
+    display: flex;
+    justify-content: center; /* 🔥 centraliza horizontal */
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap; /* 🔥 evita quebrar em telas menores */
+}
