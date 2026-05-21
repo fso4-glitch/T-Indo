@@ -171,3 +171,12 @@ body {
         font-size: 34px;
     }
 }
+
+@media (min-width: 1024px) {
+
+    .cards {
+        justify-content: center; /* CENTRALIZA */
+        overflow-x: hidden;      /* REMOVE SCROLL */
+    }
+
+}
