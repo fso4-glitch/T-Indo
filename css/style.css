@@ -303,3 +303,25 @@ body {
         scroll-snap-align: center;
     }
 }
+
+/* CORREÇÃO DOS BOTÕES */
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 18px; /* 🔥 espaço entre botões */
+    margin-top: 25px; /* 🔥 espaço acima */
+}
+
+/* PADRÃO DOS BOTÕES */
+.hero-buttons .btn {
+    width: 100%; /* 🔥 mesma largura */
+    padding: 18px; /* 🔥 mais altura */
+    border-radius: 22px; /* 🔥 mais arredondado igual app */
+    font-size: 16px;
+}
+
+/* BOTÃO BRANCO */
+.btn.white {
+    background: #eaeaea; /* mantém seu estilo */
+    color: #000;
+}
