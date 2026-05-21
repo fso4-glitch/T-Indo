@@ -1,13 +1,17 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BASE */
 body {
     font-family: 'Inter', sans-serif;
     background: #000;
-    color: white;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 /* NAVBAR */
@@ -70,17 +74,17 @@ body {
 
 /* BOTÕES */
 .btn {
+    display: inline-block;
     padding: 14px 24px;
+    margin-right: 10px;
     border-radius: 12px;
     text-decoration: none;
-    display: inline-block;
     transition: 0.3s;
-    margin-right: 10px;
 }
 
 .primary {
     background: #FFD700;
-    color: black;
+    color: #000;
 }
 
 .secondary {
@@ -88,7 +92,17 @@ body {
     color: #FFD700;
 }
 
-/* SEÇÃO PILARES */
+.btn.white {
+    background: #fff;
+    color: #000;
+}
+
+.btn.gold {
+    background: #FFD700;
+    color: #000;
+}
+
+/* SEÇÃO PLANOS */
 .planos {
     text-align: center;
     padding: 80px 20px;
@@ -102,11 +116,11 @@ body {
 }
 
 .card {
-    background: linear-gradient(145deg, #111, #1a1a1a);
+    flex: 0 0 auto;
+    width: 260px;
     padding: 30px;
     border-radius: 20px;
-    width: 260px;
-    flex: 0 0 auto;
+    background: linear-gradient(145deg, #111, #1a1a1a);
     transition: 0.3s;
 }
 
@@ -118,7 +132,7 @@ body {
     border: 2px solid #FFD700;
 }
 
-/* CTA */
+/* CTA MOTORISTA */
 .cta-driver {
     padding: 80px 20px;
     background: radial-gradient(circle at bottom, #2a2200, #000);
@@ -129,62 +143,13 @@ body {
     margin: 0 auto;
 }
 
+.cta-title {
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+}
+
 .cta-title span {
     color: #FFD700;
-}
-
-.cta-button {
-    background: #FFD700;
-    color: #000;
-    padding: 18px 30px;
-    border-radius: 12px;
-}
-
-/* HERO FINAL */
-.hero-cta {
-    padding: 80px 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.hero-box {
-    background: #111;
-    border-radius: 30px;
-    padding: 50px 25px;
-    max-width: 500px;
-    text-align: center;
-}
-
-.btn.white {
-    background: #fff;
-    color: #000;
-}
-
-.btn.gold {
-    background: #FFD700;
-    color: #000;
-}
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 34px;
-    }
-}
-
-@media (min-width: 1024px) {
-
-    .cards {
-        justify-content: center; /* CENTRALIZA */
-        overflow-x: hidden;      /* REMOVE SCROLL */
-    }
-
-}
-
-/* TIPOGRAFIA CORRIGIDA (CTA) */
-.cta-title {
-    line-height: 1.3;      /* antes tava muito apertado */
-    letter-spacing: -0.5px; /* melhora leitura sem esmagar */
 }
 
 .cta-sub {
@@ -197,26 +162,12 @@ body {
     letter-spacing: 0.2px;
 }
 
-/* PADRÃO GLOBAL (evita bug no resto do site) */
-body {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
-
-.cta-button {
-    display: inline-block;
-    margin-top: 30px; /* CRIA RESPIRO */
-}
-
-.cta-benefits {
-    margin-bottom: 30px; /* EMPURRA O BOTÃO PRA BAIXO */
-}
-
+/* BOTÕES CTA */
 .cta-buttons {
     display: flex;
-    flex-wrap: wrap; /* evita quebrar feio no notebook */
-    gap: 15px; /* espaço entre os botões */
-    justify-content: center; /* centraliza */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
     margin-top: 20px;
 }
 
@@ -225,9 +176,50 @@ body {
     padding: 12px 20px;
 }
 
+.cta-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 18px 30px;
+    border-radius: 12px;
+    background: #FFD700;
+    color: #000;
+}
+
+.cta-benefits {
+    margin-bottom: 30px;
+}
+
+/* HERO FINAL */
+.hero-cta {
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.hero-box {
+    max-width: 500px;
+    padding: 50px 25px;
+    text-align: center;
+    background: #111;
+    border-radius: 30px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+
 @media (min-width: 768px) {
     .cta-buttons {
-        justify-content: center;
         align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cards {
+        justify-content: center;
+        overflow-x: hidden;
     }
 }
